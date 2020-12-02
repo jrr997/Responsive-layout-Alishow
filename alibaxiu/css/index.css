@@ -1,0 +1,190 @@
+/* 修改container最大宽度为 1280 */
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #429ad9;
+    padding: 0!important;
+}
+
+.header span {
+    display: block;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* .header li {
+    float: left;
+} */
+
+.header img {
+    display: block;
+    margin: 0 auto;
+    /* width: 100%; */
+    /* logo图片不缩放 */
+    max-width: 100%;
+}
+
+
+/* 当进入 小屏幕 和 超小屏幕时 .nav li 浮动起来 并且宽度为20%； */
+
+@media screen and (max-width:991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+    .article {
+        margin-top: 10px;
+    }
+}
+
+
+/* 超小屏幕时，字体变小 */
+
+@media screen and (max-width:767px) {
+    .nav li a {
+        font-size: 14px;
+    }
+    .publish h3 {
+        font-size: 14px;
+    }
+}
+
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav ul {
+    padding: 0;
+    width: 100%;
+}
+
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.nav li :hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.new li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.new li:nth-child(1) {
+    width: 50%;
+    height: 256px;
+}
+
+.new a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+}
+
+.new a img {
+    width: 100%;
+    height: 100%;
+}
+
+.new p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+    height: 41px;
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+
+.new li:nth-child(1) p {
+    line-height: 41px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.new ul {
+    padding: 0;
+}
+
+.publish .pic {
+    margin-top: 10px;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.pic img {
+    width: 100%;
+}
+
+.publish {
+    border-top: 1px solid #ccc;
+}
+
+.item {
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.aside .hot {
+    display: block;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.hot span {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.hot p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #666666;
+}
